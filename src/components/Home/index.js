@@ -1,4 +1,4 @@
-import LogoTitle from '../../assets/images/logo-s.png';
+import LogoTitle from '../../assets/images/logo-k.png';
 import { Link } from 'react-router-dom';
 import './index.scss';
 
@@ -9,11 +9,11 @@ const Home = () => {
             <div className="text-zone">
                 <h1>Hi, <br /> I'm
                 <img src={LogoTitle} alt="developer" />
-                lobodan
+                eerthi,
                 <br />
-                web developer
+                programmer
                 </h1>
-                <h2>Programmer / ML Engineer / Python expert</h2>
+                <h2>Computer Science, 2027 at UMass Amherst</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
         </div>
