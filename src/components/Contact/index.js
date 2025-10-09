@@ -1,11 +1,13 @@
+import emailjs from '@emailjs/browser';
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
+    const form = useRef();
 
     useEffect(() => {
         const timeOutId = setTimeout(() => {
@@ -14,6 +16,28 @@ const Contact = () => {
 
         return () => clearTimeout(timeOutId)
     }, [])
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm(
+            'service_sm32a7e',   // replace with your EmailJS service ID
+            'template_1uox9dc',  // replace with your EmailJS template ID
+            form.current,        // connects to this form via useRef
+            { publicKey: 'pRnbZa0NyA5ewwof0' } // replace with your actual public key
+          )
+          .then(
+            () => {
+              alert('Message successfully sent!');
+              window.location.reload(false);
+            },
+            (error) => {
+              console.error('FAILED...', error.text);
+              alert('Failed to send the message, please try again.');
+            }
+          );
+      };
     
     return (
     <>
