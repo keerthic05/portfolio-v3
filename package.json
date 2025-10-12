@@ -1,6 +1,7 @@
 {
   "name": "portfolio-v3",
   "version": "0.1.0",
+  "homepage": "https://keerthic05.github.io/portfolio-v3",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -51,6 +52,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://keerthic05.github.io/portfolio-v3"
+  }
 }
