@@ -3,7 +3,7 @@ import LogoK from '../../../assets/images/letter-k.png'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
-gsap.registerPlugin(DrawSVGPlugin)
+/* gsap.registerPlugin(DrawSVGPlugin) */
 
 const Logo = () => {
 
