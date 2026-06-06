@@ -1,0 +1,94 @@
+.projects-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        width: 40%;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica', sans-serif;
+            color: #ffd700;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+    }
+
+    .projects-grid {
+        position: absolute;
+        left: 10%;
+        top: 35%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .project-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 24px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.3s ease, transform 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        &:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-4px);
+            cursor: pointer;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-family: 'Coolvetica', sans-serif;
+            color: #ffd700;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 13px;
+            color: #ccc;
+            font-family: sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            margin: 0;
+            flex-shrink: 0;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tag {
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            color: #ffd700;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: sans-serif;
+            display: inline-block;
+        }
+    }
+}
