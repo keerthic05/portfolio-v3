@@ -9,7 +9,7 @@ import Loader from 'react-loaders';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['e', 'e', 'r', 't', 'h', 'i'];
-    const jobArray = ['s', 't', 'u', 'd', 'e', 'n', 't'];
+    const jobArray = ['a', 's', 'p', 'i', 'r', 'i', 'n', 'g', ' ', 'S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r'];
 
     useEffect(() => {
         const timeoutId = setTimeout(() => setLetterClass('text-animate-hover'), 4000);
